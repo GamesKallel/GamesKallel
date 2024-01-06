@@ -1,0 +1,5 @@
+- import requests
+requests = requests.get ("https://api-nasa-v2.onrender.com/astronauta")
+if requests.status_code == 200:
+    arquivo_treino = requests.json()
+    print(arquivo_treino)
